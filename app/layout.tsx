@@ -12,8 +12,9 @@ const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["100" ,"200"
 });
 
 export const metadata: Metadata = {
-  title: "MA",
+  title: "Mariak Achuoth",
   description: "Mariak Achuoth personal portfolio",
+  icons: "/a_logo.svg",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={jetBrainsMono.className}>
       <Header/>
-      <StairTransition/>
+      {/* <StairTransition/> */}
       <PageTransition>
       {children}
       </PageTransition>

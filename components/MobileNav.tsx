@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const m_links = [
     {
-       name: "home",
+       name: "About Me",
        path: "/",
     },
     {
@@ -41,14 +41,18 @@ const MobileNav = () => {
             
             <div className=" mt-32 mb-40 text-center text-2xl">
                 <Link href= "/">
-               <h1 className="text-4xl font-semibold" > Mariak<span className=" text-accent">.</span>Achuoth
+               <h1 className="text-4xl font-semibold" >Alkaida2<span className=" text-accent">.</span>O
                </h1>
                </Link>
             </div>
             <nav className="flex flex-col justify-center items-center gap-8">
                 {m_links.map((link, index) => {
-                    return (<Link href={link.path} key={index} className="text-xl capitalize">
-                        {link.name}
+                    return (<Link 
+                        href={link.path}
+                        key={index}
+                        className={`capitalize font-medium hover:text-accent transition-all ${
+                            link.path === pathname ? 'text-accent border-b-2 border-accent' : ''}`}>
+                                {link.name}
                     </Link>)
                 })}
             </nav>
