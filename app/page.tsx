@@ -51,8 +51,8 @@ const  Home = () => {
           <Profile/>
         </div>
       </div>
+      <Statistics/>
     </div>
-    <Statistics/>
    </section>
   );
 }

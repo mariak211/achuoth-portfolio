@@ -10,17 +10,18 @@ const nav_links = [
        path: "/",
     },
     {
-        name: "Services",
-        path: "/Services",
+      name: "work Experiences",
+      path: "/work",
+   },
+    {
+        name: "Projects",
+        path: "/projects",
      },
      {
         name: "resume",
         path: "/resume",
      },
-     {
-        name: "work",
-        path: "/work",
-     },
+
      {
         name: "contact",
         path: "/contact",
