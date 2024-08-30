@@ -144,6 +144,7 @@ const Contact = () => {
                 />
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
               </div>
+            
               <Button size="md" className="max-w-40" type="submit">
                 Send message
               </Button>
