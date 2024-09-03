@@ -1,32 +1,9 @@
 'use client';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
+import { nav_links } from '@/Constants';
 
 // base on this youtube tutorials  https://youtu.be/dImgZ_AH7uA?si=iUnaE1FVvpnS1_MR
-
-const nav_links = [
-    {
-       name: "About Me",
-       path: "/",
-    },
-    {
-      name: "work Experiences",
-      path: "/work",
-   },
-    {
-        name: "Projects",
-        path: "/projects",
-     },
-     {
-        name: "resume",
-        path: "/resume",
-     },
-
-     {
-        name: "contact",
-        path: "/contact",
-     },
-    ];
 
 const Nav = () => {
     const pathname = usePathname()

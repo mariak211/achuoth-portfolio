@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -8,6 +7,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { validateForm, FormErrors } from "@/lib/validation-contact-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
+const info = [
+  {
+    icon: <FaPhoneAlt />,
+    title: "Phone",
+    description: "+1 (403) 354-0146",
+  },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "msachuot@uwaterloo.ca",
+  },
+  {
+    icon: <FaMapMarkerAlt />,
+    title: "Address",
+    description: "Waterloo, Ontario Canada",
+  },
+];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -82,6 +100,7 @@ const Contact = () => {
     <section className="py-6">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
+          {/* Contact Form */}
           <div className="xl:w-[54%]">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit}>
               <h3 className="text-4xl text-accent">Let's Connect</h3>
@@ -91,9 +110,9 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Input
-                    name="firstname"
+                    name="firstName"
                     type="text"
-                    placeholder="Firstname"
+                    placeholder="FirstName"
                     value={formData.firstname}
                     onChange={handleChange}
                     className={errors.firstname ? 'border-red-500' : ''}
@@ -102,9 +121,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <Input
-                    name="lastname"
+                    name="lastName"
                     type="text"
-                    placeholder="Lastname"
+                    placeholder="LastName"
                     value={formData.lastname}
                     onChange={handleChange}
                     className={errors.lastname ? 'border-red-500' : ''}
@@ -144,11 +163,27 @@ const Contact = () => {
                 />
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
               </div>
-            
+    
               <Button size="md" className="max-w-40" type="submit">
                 Send message
               </Button>
             </form>
+          </div>
+          {/* Info Section */}
+          <div className="flex-1 flex items-center xl:justify-end mb-8 xl:mb-0">
+            <ul className="flex flex-col gap-10">
+              {info.map((item, index) => (
+                <li key={index} className="flex items-center gap-6">
+                  <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                    <div className="text-[28px]">{item.icon}</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-white/60">{item.title}</p>
+                    <h3 className="text-xl">{item.description}</h3>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
