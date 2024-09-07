@@ -9,28 +9,21 @@ const myskills = [
     num: "01",
     title: "Mobile iOS Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "3+ years of internship experience in creating high performance and human-centric iOS applications",
     href: "",
   },
   {
     num: "02",
     title: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Build highly scalable and reliable backend service for NilePay. An API services destined to empower South Sudanese diaspora community in their quest to deliver their financial supports to their loved ones back home.",
     href: "",
   },
   {
     num: "03",
     title: "Full Stack Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "Machine Learning Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Over a year of full stack development experience in creating small to medium full stack applications including my personal website as well as Nilepay web application.",
     href: "",
   },
 ];
@@ -43,7 +36,7 @@ const skills = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 0.1, duration: 0.4, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
@@ -58,15 +51,9 @@ const skills = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link
-                    href={service.href}
-                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-                  >
-                    <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-[32px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
                 </h2>
                 {/* description */}

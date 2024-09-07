@@ -25,7 +25,7 @@ export const experience = {
     "I have completed 6 works term during my undergraduates studies.",
   items: [
     {
-      company: "Openlane.",
+      company: "Openlane",
       location: "San Francisco, California, USA",
       position: "iOS Engineer Intern",
       duration: "Jan 2023 - Apr 2023",

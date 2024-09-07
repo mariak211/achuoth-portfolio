@@ -19,12 +19,15 @@ const Home = () => {
               I'm <span className="text-accent">Mariak</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              A recent Computer Engineering graduate from the{" "}
-              <span className="text-accent">University of Waterloo</span> with a
-              passion for human-centric engineering design that fosters
-              technological inclusivity. My interests lie at the intersection of
-              entrepreneurship and technology, where I am driven to create
-              solutions that make a meaningful impact.
+              <span className="text-accent">Software Engineer</span>,{" "}
+              <span className="text-accent">iOS Engineer</span> and a recent
+              Computer Engineering graduate from the{" "}
+              <span className="text-accent">University of Waterloo</span>.
+              Passionate about human-centric engineering design that fosters
+              inclusivity and diversity. My interests lie at the intersection of
+              entrepreneurship and technology, always driven by desire to create
+              engineering solutions that make a meaningful impact in our
+              society.
             </p>
 
             {/* cta sections */}
@@ -35,7 +38,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span className="text-accent">Resume</span>
+                <span className="text-accent  hover:text-primary">Resume</span>
                 <FiDownload className="text-xl text-accent" />
               </Button>
 

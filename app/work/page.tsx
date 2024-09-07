@@ -12,7 +12,7 @@ const work = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.1, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -45,12 +45,12 @@ const work = () => {
                             {item.position}
                           </h3>
                           <div className="text-[12px] flex flex-row justify-between items-center gap-2">
-                            <FaRegCalendarAlt />
-                            <span className="text-white">{item.duration}</span>
                             <FaMapMarkerAlt />
                             <span className="text-accent">{item.location}</span>
+                            <FaRegCalendarAlt />
+                            <span className="text-white">{item.duration}</span>
                           </div>
-                          <p>{item.summary}</p>
+                          {/* <p>{item.summary}</p> */}
                         </li>
                       );
                     })}

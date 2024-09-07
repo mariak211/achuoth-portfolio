@@ -22,39 +22,39 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    icon: '',
-    category: "frontend",
-    title: "SoulScribe AI",
+    icon: "",
+    category: "Health, Internet, Technology",
+    title: "SoulScribeAI",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      "SoulScribeAI, the Final Year Design Project (FYDP), is an AI-powered journaling app designed to empower journaling enthusiasts by offering therapeutic guidance throughout the journaling process.",
+    stack: [
+      { name: "iOS" },
+      { name: "SwiftUI" },
+      { name: "Combine " },
+      { name: "UIKit" },
+      { name: "Swift" },
+    ],
+    image: "/assets/SoulScribeAIProject.svg",
+    live: "https://uwaterloo.ca/capstone-design/project-abstracts/2024-capstone-design-projects/2024-electrical-computer-engineering-capstone-designs#18",
+    github: "https://github.com/SoulScribe-AI/mobile",
   },
   {
     num: "02",
-    icon: '',
-    category: "fullstack",
-    title: "NileRemit",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
     icon: "",
-    category: "frontend",
+    category: "Information, Internet and Technology",
     title: "NilePay",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+      "NilePay fintech remittance and payment platform available in both web and mobile app that aim to empower payments system for South Sudanese diaspora community in supporting their loved ones back home in South Sudan.",
+    stack: [
+      { name: "iOS" },
+      { name: "Swift" },
+      { name: "SwiftUI" },
+      { name: "UIkit" },
+      { name: "Next.js" },
+    ],
+    image: "/assets/NilePay.svg",
+    live: "https://nileremit-web.vercel.app/",
+    github: "https://github.com/NileRemit/nilepay",
   },
 ];
 
@@ -71,7 +71,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.1, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -153,7 +153,7 @@ const Projects = () => {
                           src={project.image}
                           fill
                           className="object-cover"
-                          alt=""
+                          alt="Project Image"
                         />
                       </div>
                     </div>
