@@ -6,9 +6,9 @@ import Image from "next/image";
 const Profile = () => {
   return (
     <div className="w-full h-full relative">
-      {/* i age */}
+      {/* profile */}
       <motion.div>
-        <div className="w-[298px h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+        <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[298px] md:h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
           <Image
             src="/assets/photo.png"
             priority
