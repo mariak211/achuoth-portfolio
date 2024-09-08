@@ -7,6 +7,7 @@ import Socials from "@/components/Socials";
 import Profile from "@/components/Profile";
 import Statistics from "@/components/Statistics";
 import Skills from "@/components/Skills";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -33,14 +34,16 @@ const Home = () => {
             {/* cta sections */}
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span className="text-accent  hover:text-primary">Resume</span>
-                <FiDownload className="text-xl text-accent" />
-              </Button>
+              <Link href="/SoftwareEngineer_Resume.pdf" passHref>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span className="text-accent hover:text-primary">Resume</span>
+                  <FiDownload className="text-xl text-accent" />
+                </Button>
+              </Link>
 
               {/* Socials */}
               <div className="mb-8 xl:mb-0">
