@@ -15,6 +15,10 @@ export const nav_links = [
     name: "Skills",
     path: "/skills",
   },
+  {
+    name: "Testimonials",
+    path: "/testimonials",
+  },
 ];
 
 // experience data
@@ -66,7 +70,7 @@ export const experience = {
       company: "theScore",
       location: "Toronto, Ontario, Canada",
       position: "iOS Engineer Intern",
-      duration: "May - Agu 2020",
+      duration: "May - Aug 2020",
       summary:
         "Member of the iOS mobile development team focused on creating compelling user experiences and integrating backend services for theScore Betting app",
       description: "",

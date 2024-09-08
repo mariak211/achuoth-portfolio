@@ -5,7 +5,6 @@ import { FiDownload } from "react-icons/fi";
 // Components
 import Socials from "@/components/Socials";
 import Profile from "@/components/Profile";
-import Statistics from "@/components/Statistics";
 import Skills from "@/components/Skills";
 import Link from "next/link";
 

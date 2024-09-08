@@ -26,13 +26,15 @@ const projects = [
     category: "Health, Internet, Technology",
     title: "SoulScribeAI",
     description:
-      "SoulScribeAI, the Final Year Design Project (FYDP), is an AI-powered journaling app designed to empower journaling enthusiasts by offering therapeutic guidance throughout the journaling process.",
+      "SoulScribeAI, the Final Year Design Project (FYDP), is an AI-powered journaling app designed to empower journaling enthusiasts by offering therapeutic and empathetic guidance throughout the journaling process.",
     stack: [
       { name: "iOS" },
       { name: "SwiftUI" },
-      { name: "Combine " },
+      { name: "Combine" },
       { name: "UIKit" },
       { name: "Swift" },
+      { name: "AWS" },
+      { name: "Python" },
     ],
     image: "/assets/SoulScribeAIProject.svg",
     live: "https://uwaterloo.ca/capstone-design/project-abstracts/2024-capstone-design-projects/2024-electrical-computer-engineering-capstone-designs#18",
@@ -50,7 +52,9 @@ const projects = [
       { name: "Swift" },
       { name: "SwiftUI" },
       { name: "UIkit" },
+      { name: "React" },
       { name: "Next.js" },
+      { name: "TypeScript" },
     ],
     image: "/assets/NilePay.svg",
     live: "https://nileremit-web.vercel.app/",
@@ -113,7 +117,7 @@ const Projects = () => {
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live project</p>
+                        <p>Link to</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
