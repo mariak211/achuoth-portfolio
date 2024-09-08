@@ -16,7 +16,7 @@ const myskills = [
     num: "02",
     title: "Backend Development",
     description:
-      "Build highly scalable and reliable backend service for NilePay. An API services destined to empower South Sudanese diaspora community in their quest to deliver their financial supports to their loved ones back home.",
+      "Built a highly scalable and reliable backend service for NilePay. An API service destined to empower South Sudanese diaspora community in their quest to deliver their financial support to their loved ones back home.",
     href: "",
   },
   {
