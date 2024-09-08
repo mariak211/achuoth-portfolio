@@ -61,7 +61,12 @@ const Home = () => {
         </div>
 
         {/* Skills section */}
-        <Skills />
+        <div className="flex flex-col gap-2">
+          <h1 className="h2 mb-6">
+            <span className="text-accent border-b-2 border-white">Skills</span>
+          </h1>
+          <Skills />
+        </div>
       </div>
     </section>
   );

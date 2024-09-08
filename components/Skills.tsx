@@ -62,13 +62,7 @@ const Skills = () => {
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
         <div className="flex flex-col overflow-x-auto">
-          <h1 className="h2 mb-6">
-            <span className="text-accent border-b-2 border-white">
-              Technical Skills
-            </span>
-          </h1>
-
-          <div className="flex flex-nowrap gap-4 xl:gap-[30px]">
+          <div className="flex flex-nowrap gap-4 xl:gap-[30px">
             {skillList.map((skill, index) => (
               <SkillsCard key={index} skill={skill} />
             ))}

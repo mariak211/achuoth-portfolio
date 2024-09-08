@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
 import { nav_links } from "@/Constants";
+import { Button } from "./ui/button";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
 
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col max-h-[80vh] overflow-y-auto">
         <div className=" mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-sm font-semibold border border-green-400 rounded-xl p-4">
@@ -37,6 +38,11 @@ const MobileNav = () => {
               </Link>
             );
           })}
+          <div className="flex items-center gap-8">
+            <Link href="/contact">
+              <Button>Hire Me</Button>
+            </Link>
+          </div>
         </nav>
       </SheetContent>
     </Sheet>
