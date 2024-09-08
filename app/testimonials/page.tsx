@@ -21,10 +21,10 @@ const testimonials = [
   {
     imgurl: "/assets/testimonials/innovapostSendoff.jpeg",
     name: "Innovapost Mobile team",
-    interest: "Mobile team",
+    interest: "Mobile Platform",
     company: "Innovapost",
     feedback:
-      "Thank you Mariak for your amazing work and  winning the coop student of the team!",
+      "Thank you Mariak for your amazing work and being our co-op student of the term winner! We are excited for you and the future ahead of you!!",
   },
   {
     imgurl: "/assets/testimonials/cathy.svg",
@@ -70,13 +70,13 @@ const Testimonials = () => {
                 {testimonial.name}
               </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {testimonial.company}
+              <h2 className="text-[12px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {testimonial.interest}
               </h2>
               {/* Testimonials */}
               <p className="text-white/60">{testimonial.feedback}</p>
               {/* stack */}
-              <li className="text-xl text-accent">{testimonial.interest}</li>
+              <li className="text-xl text-accent">{testimonial.company}</li>
               <div className="border border-white/20"></div>
             </div>
           </div>
