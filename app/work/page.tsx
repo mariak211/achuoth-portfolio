@@ -21,12 +21,12 @@ const work = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <div className="bg-primary text-white p-4 mb-6 rounded-md text-center w-1/2  border border-purple-500 sm:w-3/4">
-            Work experinece section is still under design, a fully interacting
-            section will come soon!
-          </div>
           {/* content */}
           <div className="min-h-[70vh] w-full">
+            <div className="bg-primary text-white p-4 mb-6 rounded-md text-center w-1/2  border border-purple-500 sm:w-3/4">
+              Work experinece section is still under design, a fully interacting
+              section will come soon!
+            </div>
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
