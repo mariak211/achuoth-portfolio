@@ -58,7 +58,7 @@ export const experience = {
     },
 
     {
-      company: "InnovaPost",
+      company: "InnovaPost/ Canada Post",
       location: "Ottawa, Ontario, Canada",
       position: "Software Engineer intern",
       duration: "Jan - May 2021",
