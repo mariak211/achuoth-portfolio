@@ -53,6 +53,19 @@ const work = () => {
                           <p className="text-white/80 text-sm">
                             {item.summary}
                           </p>
+                          {/* {Tools sections} */}
+                          <ul className="flex gap-4 mt-3">
+                            {item.stack.map((item, index) => {
+                              return (
+                                <li
+                                  key={index}
+                                  className="text-sm bg-accent text-black items-center p-[4px] rounded-md"
+                                >
+                                  {item.name}
+                                </li>
+                              );
+                            })}
+                          </ul>
                         </li>
                       );
                     })}

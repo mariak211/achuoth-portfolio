@@ -33,7 +33,7 @@ const Home = () => {
             {/* cta sections */}
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="/assets/SoftwareEngineer_Resume.pdf" passHref>
+              <Link href="/assets/Achuoth, Mariak @2025.pdf" passHref>
                 <Button
                   variant="outline"
                   size="lg"
