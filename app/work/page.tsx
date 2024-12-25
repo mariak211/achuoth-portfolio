@@ -21,9 +21,9 @@ const work = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          {/* content */}
+          {/* Content */}
           <div className="min-h-[70vh] w-full">
-            {/* experience */}
+            {/* Experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -33,24 +33,26 @@ const work = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-start items-start gap-4"
                         >
                           <div className="flex items-center gap-2">
-                            {/* dot */}
+                            {/* Dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
 
-                          <h3 className="text-xl max-w-[300px] min-h-[60px] text-center lg:text-left ">
+                          <h3 className="text-xl max-w-[300px]">
                             {item.position}
                           </h3>
-                          <div className="text-[12px] flex flex-row justify-between items-center gap-2">
+                          <div className="text-[12px] flex flex-row items-center gap-2">
                             <FaMapMarkerAlt />
                             <span className="text-accent">{item.location}</span>
                             <FaRegCalendarAlt />
                             <span className="text-white">{item.duration}</span>
                           </div>
-                          <p>{item.summary}</p>
+                          <p className="text-white/80 text-sm">
+                            {item.summary}
+                          </p>
                         </li>
                       );
                     })}
