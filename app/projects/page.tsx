@@ -26,7 +26,7 @@ const projects = [
     category: "Health, Internet, Technology",
     title: "SoulScribeAI",
     description:
-      "SoulScribeAI, the Final Year Design Project (FYDP), is an AI-powered journaling app designed to empower journaling enthusiasts by offering therapeutic and empathetic guidance throughout the journaling process.",
+      "SoulScribeAI (Final Year Design Project-FYDP), is an AI-powered journaling app designed to empower journaling enthusiasts by offering therapeutic and empathetic guidance throughout the journaling process.",
     stack: [
       { name: "iOS" },
       { name: "SwiftUI" },
@@ -46,18 +46,17 @@ const projects = [
     category: "Information, Internet and Technology",
     title: "NilePay",
     description:
-      "NilePay fintech remittance and payment platform available in both web and mobile app that aim to empower payments system for South Sudanese diaspora community in supporting their loved ones back home in South Sudan.",
+      "NilePay is a money transfer app  that offers South Sudanese in the diaspora a smarter way to send money home; saving time, reducing costs and making the transfer process hasle-free.",
     stack: [
-      { name: "iOS" },
       { name: "Swift" },
-      { name: "SwiftUI" },
       { name: "UIkit" },
-      { name: "React" },
       { name: "Next.js" },
       { name: "TypeScript" },
+      { name: "REST API" },
+      { name: "Database ORM" },
     ],
-    image: "/assets/NilePay.svg",
-    live: "https://nileremit-web.vercel.app/",
+    image: "/assets/nilepayMock.svg",
+    live: "https://www.nilepay.tech/",
     github: "https://github.com/NileRemit/nilepay",
   },
 ];
@@ -80,9 +79,6 @@ const Projects = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
-        <div className="bg-primary text-white p-4 mb-6 rounded-md text-center w-1/2  border border-red-500 sm:w-3/4">
-          Note: Due to privacy these projects repos are private!
-        </div>
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
@@ -100,10 +96,8 @@ const Projects = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-sm bg-accent text-black items-center p-[4px] rounded-md">
                       {item.name}
-                      {/* remove the last comma */}
-                      {index !== project.stack.length - 1 && ","}
                     </li>
                   );
                 })}
@@ -153,7 +147,7 @@ const Projects = () => {
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center">
                       {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                      <div className="absolute top-0 bottom-0 w-full h-full z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
